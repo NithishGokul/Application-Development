@@ -1,0 +1,23 @@
+/* src/components/Tasks.css */
+.tasks-container {
+    padding: 20px;
+  }
+  
+  .tasks-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .tasks-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
