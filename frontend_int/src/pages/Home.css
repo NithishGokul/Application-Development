@@ -1,0 +1,195 @@
+/* General Styles */
+.home-container {
+  padding: 20px;
+}
+
+/* Welcome and Side Headings Container */
+.welcome-side-container {
+  margin-bottom: 40px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Get Started Button */
+.get-started-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Grid for Section Headings */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  text-align: center;
+  padding: 15px;
+  background-color: #000000ba;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.info-item:hover {
+  background-color: #7b879488;
+  transform: scale(1.05);
+}
+
+.info-item h2 {
+  margin: 0;
+  color: #f0f8ff;
+}
+
+.info-item p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Zigzag Effect */
+.section:nth-child(odd) .section-image {
+  order: 1; /* Image on the right for odd sections */
+  margin-left: 20px;
+}
+
+.section:nth-child(odd) .section-text {
+  order: 2; /* Text on the left for odd sections */
+  margin-right: 20px;
+}
+
+.section:nth-child(even) .section-image {
+  order: 2; /* Image on the left for even sections */
+  margin-right: 20px;
+}
+
+.section:nth-child(even) .section-text {
+  order: 1; /* Text on the right for even sections */
+  margin-left: 20px;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.section-image {
+  flex: 1;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  /* Remove hover effect */
+  margin: 0; /* Ensure margin is reset for edge alignment */
+}
+
+.section-text {
+  flex: 2;
+  color: #333;
+}
+
+/* Background images for each section */
+#task-management .section-image {
+  background-image: url("C:\Users\navee\OneDrive\Documents\workspace\application-development\front_end\task-time-management\4899203.jpg"); /* Replace with your image path */
+}
+
+#time-tracking .section-image {
+  background-image: url("C:\Users\navee\OneDrive\Documents\workspace\application-development\front_end\task-time-management\3912425.jpg"); /* Replace with your image path */
+}
+
+#progress-monitoring .section-image {
+  background-image: url("C:\Users\navee\OneDrive\Documents\workspace\application-development\front_end\task-time-management\19197367.jpg"); /* Replace with your image path */
+}
+
+#collaboration .section-image {
+  background-image: url("C:\Users\navee\OneDrive\Documents\workspace\application-development\front_end\task-time-management\5356723.jpg"); /* Replace with your image path */
+}
+
+/* Unique Typography for Each Section */
+.section:nth-child(1) .section-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #007bff;
+}
+
+.section:nth-child(2) .section-text h2 {
+  font-family: 'Lora', serif;
+  color: #e63946;
+}
+
+.section:nth-child(3) .section-text h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #2a9d8f;
+}
+
+.section:nth-child(4) .section-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #f4a261;
+}
+
+/* Custom Borders and Backgrounds */
+.section:nth-child(1) {
+  border: 2px solid #007bff;
+  background-color: #f0f8ff;
+}
+
+.section:nth-child(2) {
+  border: 2px solid #e63946;
+  background-color: #ffe5e5;
+}
+
+.section:nth-child(3) {
+  border: 2px solid #2a9d8f;
+  background-color: #e0f7f1;
+}
+
+.section:nth-child(4) {
+  border: 2px solid #f4a261;
+  background-color: #fff3e0;
+}

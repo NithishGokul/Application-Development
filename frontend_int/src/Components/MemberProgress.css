@@ -1,0 +1,24 @@
+.member-progress-container {
+    padding: 20px;
+  }
+  
+  .task-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .task-item p {
+    margin: 5px 0;
+  }
+  
+  .task-item button {
+    margin-right: 10px;
+  }
+  

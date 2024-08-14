@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #0000001c;
+  padding: 10px 0;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+}
+.logo{
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar ul li a:hover {
+  background-color: #228ec8;
+  border-radius: 4px;
+}

@@ -1,0 +1,27 @@
+.task-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .task-item h3 {
+    margin: 0 0 5px;
+  }
+  
+  .task-item p {
+    margin: 0 0 10px;
+  }
+  
+  .progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 10px;
+  }
+  
